@@ -11,23 +11,31 @@ body {
     min-height: 100vh;
     background: whitesmoke;
 }
+
+.wrapper {
+    position: relative; /* IMPORTANT */
+}
+
 h2 {
     text-align: center;
     font-size: 3em;
     color: #e94d58;
     margin: 15px 0;
 }
+
 .btn-group {
-    width: 100%;
+    position: relative; /* IMPORTANT */
+    width: 400px;
     height: 40px;
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
+
 button {
     position: absolute;
     width: 150px;
-    height: inherit;
+    height: 40px;
     color: white;
     font-size: 1.2em;
     border-radius: 30px;
@@ -35,14 +43,15 @@ button {
     cursor: pointer;
     box-shadow: 0 2px 4px gray;
     border: 2px solid #e94d58;
-    font-size: 1.2em;
 }
+
 button:nth-child(1) {
-    margin-left: -200px;
+    left: 0;
     background: #e94d58;
 }
+
 button:nth-child(2) {
-    margin-right: -200px;
+    right: 0;
     background: white;
     color: #e94d58;
 }
