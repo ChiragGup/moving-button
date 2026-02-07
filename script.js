@@ -11,9 +11,9 @@ yesBtn.addEventListener("click", () => {
 });
 
 noBtn.addEventListener("mouseover", () => {
-    const randomLeft = Math.floor(Math.random() * 200)+1; // Subtract button width (50px) to keep it inside
-    const randomTop = Math.floor(Math.random() * 200)+1; // Subtract button height (50px) to keep it inside
+  const randomLeft = Math.floor(Math.random() * 200) + 1;
+  const randomTop = Math.floor(Math.random() * 200) + 1;
 
-    dangerButton.style.left = randomLeft + "px";
-    dangerButton.style.top = randomTop + "px";
+  noBtn.style.left = randomLeft + "px";
+  noBtn.style.top = randomTop + "px";
 });
